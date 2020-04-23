@@ -19,7 +19,8 @@ public class Manager extends Employee {
 	public void setEmpList(Employee[] empList) {
 		this.empList = empList;
 	}
-
+	
+	@Override
 	public void info() {
 		super.info();
 		System.out.println("======================================================");
