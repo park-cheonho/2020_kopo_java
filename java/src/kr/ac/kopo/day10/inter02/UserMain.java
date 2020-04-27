@@ -5,7 +5,7 @@ public class UserMain {
 	public static void main(String[] args) {
 		
 		TV tv = new LGTV();
-		tv = new SamsungTV();
+//		tv = new SamsungTV();
 		
 		tv.togglePower();
 		tv.channelDown();
@@ -14,6 +14,8 @@ public class UserMain {
 		tv.mute();
 		tv.channeUp();
 		tv.togglePower();
+		
+		tv.copyright();
 		
 	
 		

@@ -45,6 +45,11 @@ public class Icecream {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+
+	@Override
+	public String toString() {
+		return "아이스크림명 : " + name + ", 가격 " + price;
+	}
 }
 
 

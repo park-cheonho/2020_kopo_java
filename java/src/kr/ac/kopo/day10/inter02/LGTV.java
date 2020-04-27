@@ -61,6 +61,16 @@ public class LGTV implements TV {
 	public void info() {
 		System.out.println("현재 채널번호 : " + channelNo + ", 음량크기 : " + volumeSize);
 	}
+
+	/*
+	@Override
+	public void copyright() {
+		// TODO Auto-generated method stub
+		System.out.println("override....");
+	}
+	*/
+	
+	
 }
 
 
