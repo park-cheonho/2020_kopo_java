@@ -2,6 +2,8 @@ package kr.ac.kopo.day12;
 
 import java.util.Scanner;
 
+import kr.ac.kopo.util.CalendarUtil;
+
 public class CalendarView {
 
 	private Scanner sc;
@@ -23,7 +25,7 @@ public class CalendarView {
 	public void execute() {
 		
 		loop : while (true) {
-			int no = scanInt("항목을 선택하세요(1.특정년도  2.특정월  3.종료) : ");
+			int no = scanInt("항목을 선택하세요(1.특정년도  2.특정월  3. 현재시간  0.종료) : ");
 
 			int year = 0, month = 0;
 			switch (no) {
@@ -36,7 +38,10 @@ public class CalendarView {
 				month = scanInt("월을 입력하세요 : ");
 				util.showByMonth(year, month);
 				break;
-			case 3:
+			case 3 : 
+				System.out.println("현재시간 : " + util.today());
+				break;
+			case 0:
 				System.exit(0);		// 프로그램을 종료하는 메소드
 				//break loop;
 			}
